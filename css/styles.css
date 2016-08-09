@@ -1,0 +1,70 @@
+body {
+  margin: 0 auto;
+  max-width: 50em;
+
+  font-family: "Helvetica", "Papyrus", sans-serif;
+
+  line-height: 1.5;
+  padding: 4em 1em;
+
+  color: #555;
+
+  text-align: center;
+}
+
+h2 {
+  margin-top: 1em;
+  padding-top: 1em;
+}
+
+h1, h2, strong {
+  color: #333;
+}
+
+h5 {
+  padding-bottom: 2em;
+}
+
+table {
+  margin: 0 auto;
+}
+
+img {
+  padding-top: 1em;
+  width: 60%;
+  height: 60%;
+}
+
+.portalBox {
+  float: left;
+  width: 50%;
+  height: 300px;
+
+  padding-top: 50px;
+}
+
+.portalLink {
+  float:left;
+  width: 33.33%;
+  height: 150px;
+}
+
+.linkBox {
+  float:left;
+  width: 50%;
+  height: 150px;
+}
+
+.portalBox:hover, .linkBox:hover {
+  background-color: lightblue;
+  box-shadow: inset 0 0 0 16px rgba(255, 255, 255, 0.6), 0 1px 2px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.contentWindow {
+  width: 100%;
+  height: 400px;
+}
+
+
