@@ -35,6 +35,19 @@ img {
   height: 60%;
 }
 
+circle {
+  fill: yellowgreen;
+  stroke: #655;
+  stroke-width: 200;
+  stroke-dasharray: 0 600; /* 2π × 100 ≈ 600~ */
+}
+
+svg {
+  transform: rotate(-90deg);
+  background: yellowgreen;
+  border-radius: 50%;
+}
+
 .portalBox {
   float: left;
   width: 50%;

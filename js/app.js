@@ -235,9 +235,9 @@ var PersonalWindow = React.createClass({
     
     return (
       <div className='contentWindow'>
-        <div>
-          Sports
-        </div>
+        <svg width='400' height='400'>
+          <circle r='100' cx='200' cy='200'/>
+        </svg>
         <button onClick={this.props.handleClick}>Back to Landing</button>
       </div>
     );
