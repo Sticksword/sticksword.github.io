@@ -59,37 +59,54 @@ var games = [
 ];
 
 var sports = [
-  {name: 'Hearthstone'},
+  {name: 'Tennis'},
+  {name: 'Basketball'},
   {name: ''},
 ];
 
 var movies = [
-  {name: 'Hearthstone'},
+  {name: 'The Prestige'},
+  {name: 'Cloud Atlas'},
   {name: ''},
 ];
 
 var music = [
-  {name: 'Hearthstone'},
-  {name: ''},
+  {name: 'Chillstep'},
+  {name: 'Trance'},
+  {name: 'House'},
+  {name: 'Trap'},
+  {name: 'R & B'},
 ];
 
 var books = [
-  {name: 'Hearthstone'},
+  {name: 'Elon Musk: Tesla, SpaceX, and the Quest for a Fantastic Future'},
+  {name: 'How Google Works'},
+  {name: 'Zero to One'},
+  {name: 'The Startup of You'},
   {name: ''},
 ];
 
 var places = [
-  {name: 'Hearthstone'},
-  {name: ''},
+  {name: 'South Carolina'},
+  {name: 'Georgia'},
+  {name: 'New York'},
+  {name: 'Massachusetts'},
+  {name: 'Virginia'},
+  {name: 'California'},
+  {name: 'China'},
 ];
 
-var places = [
-  {name: 'Hearthstone'},
+var quotes = [
+  {name: 'Life is about your slope, not your y-intercept.'},
+  {name: 'It is not how hard you hit, but how hard you get hit and keep moving forward.'},
+  {name: 'If you give people the opportunity to do the right thing, you will rarely be disappointed'},
   {name: ''},
 ];
 
 var shows = [
-  {name: 'Hearthstone'},
+  {name: 'Game of Thrones'},
+  {name: 'Batman'},
+  {name: 'Justice League'},
   {name: ''},
 ];
 
@@ -334,32 +351,32 @@ var PersonalWindow = React.createClass({
       default:
         var result = 
           <div>
-            <div onClick={() => this.changePanel('mission-panel')}>
-              <br/>Missions & Goals
+            <div className='personalLinkBox' onClick={() => this.changePanel('mission-panel')}>
+              Missions & Goals
             </div>
-            <div onClick={() => this.changePanel('gaming-panel')}>
-              <br/>Gaming
+            <div className='personalLinkBox' onClick={() => this.changePanel('gaming-panel')}>
+              Gaming
             </div>
-            <div onClick={() => this.changePanel('sports-panel')}>
-              <br/>Sports
+            <div className='personalLinkBox' onClick={() => this.changePanel('sports-panel')}>
+              Sports
             </div>
-            <div onClick={() => this.changePanel('movies-panel')}>
-              <br/>Movies
+            <div className='personalLinkBox' onClick={() => this.changePanel('movies-panel')}>
+              Movies
             </div>
-            <div onClick={() => this.changePanel('music-panel')}>
-              <br/>Music
+            <div className='personalLinkBox' onClick={() => this.changePanel('music-panel')}>
+              Music
             </div>
-            <div onClick={() => this.changePanel('books-panel')}>
-              <br/>Books
+            <div className='personalLinkBox' onClick={() => this.changePanel('books-panel')}>
+              Books
             </div>
-            <div onClick={() => this.changePanel('places-panel')}>
-              <br/>Places
+            <div className='personalLinkBox' onClick={() => this.changePanel('places-panel')}>
+              Places
             </div>
-            <div onClick={() => this.changePanel('quotes-panel')}>
-              <br/>Quotes
+            <div className='personalLinkBox' onClick={() => this.changePanel('quotes-panel')}>
+              Quotes
             </div>
-            <div onClick={() => this.changePanel('shows-panel')}>
-              <br/>Shows
+            <div className='personalLinkBox' onClick={() => this.changePanel('shows-panel')}>
+              Shows
             </div>
             <button onClick={this.props.handleClick}>Back to Landing</button>
           </div>;
