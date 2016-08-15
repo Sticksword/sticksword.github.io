@@ -1,8 +1,8 @@
-
 /* =================================================
  * Init Variables
  * NOTE: should migrate to an actual DB someday...
 ================================================== */
+var ReactCSSTransitionGroup = React.addons.CSSTransitionGroup;
 
 var cs_courses = [
   {name: 'Database Systems', number: 'CS 4750'},
@@ -519,26 +519,25 @@ var App = React.createClass({
   render: function() {
     if (this.state.window == 'main-window') {
       var result = 
-        <div className='contentWindow'>
+        <div key={'main'} className='contentWindow'>
           <PortalBox portalType={'dev'} handleClick={this.changeToDev}/>
           <PortalBox portalType={'personal'} handleClick={this.changeToPersonal}/>
         </div>;
     } else if (this.state.window == 'dev-window') {
-      var result = <DevWindow handleClick={this.changeToMain}/>;
-    } else { // personal-window
-      var result = <PersonalWindow handleClick={this.changeToMain}/>;
+      var result = <DevWindow key={'dev'} handleClick={this.changeToMain}/>;
+    } else {
+      var result = <PersonalWindow key={'personal'} handleClick={this.changeToMain}/>;
     }
     return (
       <div>
         <Greetings brands={this.props.brands}/>
-        {result}
+        <ReactCSSTransitionGroup transitionName="example" transitionEnterTimeout={1000} transitionLeaveTimeout={1000}>
+          {result}
+        </ReactCSSTransitionGroup>
         <Footer/>
       </div>
     );
   }
 });
 
-ReactDOM.render(
-  <App brands={brands} />,
-  document.getElementById('content')
-);
+ReactDOM.render(<App brands={brands} />, document.getElementById('content'));
