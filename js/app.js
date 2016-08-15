@@ -1,3 +1,102 @@
+
+/* =================================================
+ * Init Variables
+ * NOTE: should migrate to an actual DB someday...
+================================================== */
+
+var cs_courses = [
+  {name: 'Database Systems', number: 'CS 4750'},
+  {name: 'Cloud Computing', number: 'CS 4740'},
+  {name: 'Mobile Application Development', number: 'CS 4720'},
+  {name: 'Artificial Intelligence', number: 'CS 4710'},
+  {name: 'Operating Systems', number: 'CS 4414'},
+  {name: 'Big Data and Visual Search', number: '4501/5501'},
+  {name: 'Information Retrieval', number: '4501/5501'},
+  {name: 'Algorithms', number: 'CS 4102'},
+  {name: 'Computer Architecture', number: 'CS 3330'},
+  {name: 'Advanced Software Developerment', number: 'CS 3240'},
+  {name: 'Theory of Computation', number: 'CS 3102'}
+];
+
+var online_courses = [
+  {name: 'MongoDB University: M101P Course'},
+  {name: 'IBM: Introduction to Hadoop'},
+  {name: 'Udacity: Deep Learning'},
+  {name: 'Udacity: Interactive 3D Graphics'},
+  {name: 'Coursera: Programming Mobile Apps for Android Handheld Systems Part I'},
+  {name: 'Codecademy.com/sticksword'}
+];
+
+var econ_math_courses = [
+  {name: 'Econometric Methods'},
+  {name: 'Empirical Finance'},
+  {name: 'Theory of Financial Markets'},
+  {name: 'Behavioral Finance'},
+  {name: 'Intermediate Macro & Microeconomics'},
+  {name: 'Probability'},
+  {name: 'Statistics'},
+  {name: 'Linear Algebra'},
+  {name: 'Differential Equations'},
+  {name: 'Multivariable Calculus'}
+];
+
+var missions = [
+  {name: 'Build gaming/dev rig'},
+  {name: 'Get Masters in CS'},
+  {name: 'Explore and Absorb Bae Area'},
+  {name: 'Wrap up front-end explorations'},
+  {name: 'Deploy MVP Django API'},
+  {name: 'Learn more Spring!'},
+];
+
+var games = [
+  {name: 'Hearthstone'},
+  {name: 'Undertale'},
+  {name: 'HoN'},
+  {name: 'Starcraft 2'},
+  {name: 'Talos Principle'},
+  {name: ''},
+];
+
+var sports = [
+  {name: 'Hearthstone'},
+  {name: ''},
+];
+
+var movies = [
+  {name: 'Hearthstone'},
+  {name: ''},
+];
+
+var music = [
+  {name: 'Hearthstone'},
+  {name: ''},
+];
+
+var books = [
+  {name: 'Hearthstone'},
+  {name: ''},
+];
+
+var places = [
+  {name: 'Hearthstone'},
+  {name: ''},
+];
+
+var places = [
+  {name: 'Hearthstone'},
+  {name: ''},
+];
+
+var shows = [
+  {name: 'Hearthstone'},
+  {name: ''},
+];
+
+var brands = [
+  'a developer', 'happy', 'a gamer', 'optimistic', 'a tennis player', 'jolly', 'an adventurer', 'unbound'
+];
+
 /* =================================================
  * Landing
 ================================================== */
@@ -7,7 +106,7 @@ var PortalBox = React.createClass({
     var result = this.props.portalType == 'dev' ?
       <div className='portalBox'>
         <h3>DEVELOPER JOURNEY</h3>
-        <h5>cat /var/log/bugs4days.txt</h5>
+        <h4>cat /var/log/bugs4days.txt</h4>
         <div>Quick Links</div>
         <br/>
         <div>
@@ -18,7 +117,7 @@ var PortalBox = React.createClass({
       </div>:
       <div className='portalBox'>
         <h3>PERSONAL JOURNEY</h3>
-        <h5>cat /var/log/life.txt</h5>
+        <h4>cat /var/log/life.txt</h4>
         <div>Quick Links</div>
         <br/>
         <div>
@@ -79,42 +178,6 @@ var DevWindow = React.createClass({
     );
   }
 });
-
-var cs_courses = [
-  {name: 'Database Systems', number: 'CS 4750'},
-  {name: 'Cloud Computing', number: 'CS 4740'},
-  {name: 'Mobile Application Development', number: 'CS 4720'},
-  {name: 'Artificial Intelligence', number: 'CS 4710'},
-  {name: 'Operating Systems', number: 'CS 4414'},
-  {name: 'Big Data and Visual Search', number: '4501/5501'},
-  {name: 'Information Retrieval', number: '4501/5501'},
-  {name: 'Algorithms', number: 'CS 4102'},
-  {name: 'Computer Architecture', number: 'CS 3330'},
-  {name: 'Advanced Software Developerment', number: 'CS 3240'},
-  {name: 'Theory of Computation', number: 'CS 3102'}
-];
-
-var online_courses = [
-  {name: 'MongoDB University: M101P Course'},
-  {name: 'IBM: Introduction to Hadoop'},
-  {name: 'Udacity: Deep Learning'},
-  {name: 'Udacity: Interactive 3D Graphics'},
-  {name: 'Coursera: Programming Mobile Apps for Android Handheld Systems Part I'},
-  {name: 'Codecademy.com/sticksword'}
-];
-
-var econ_math_courses = [
-  {name: 'Econometric Methods'},
-  {name: 'Empirical Finance'},
-  {name: 'Theory of Financial Markets'},
-  {name: 'Behavioral Finance'},
-  {name: 'Intermediate Macro & Microeconomics'},
-  {name: 'Probability'},
-  {name: 'Statistics'},
-  {name: 'Linear Algebra'},
-  {name: 'Differential Equations'},
-  {name: 'Multivariable Calculus'}
-];
 
 var CoursesTakenPanel = React.createClass({
   handleChange: function() {
@@ -231,15 +294,116 @@ var SkillsPanel = React.createClass({
 ================================================== */
 
 var PersonalWindow = React.createClass({
+  getInitialState: function() {
+    return { panel: 'main-panel' };
+  },
+
+  changePanel: function(panelName) {
+    this.setState({ panel: panelName });
+  },
+
   render: function() {
-    
+    switch (this.state.panel) {
+      case 'mission-panel':
+        var result = <CategoryListPanel handleClick={this.changePanel} categoryList={missions}/>;
+        break;
+      case 'gaming-panel':
+        var result = <CategoryListPanel handleClick={this.changePanel} categoryList={games}/>;
+        break;
+      case 'sports-panel':
+        var result = <CategoryListPanel handleClick={this.changePanel} categoryList={sports}/>;
+        break;
+      case 'movies-panel':
+        var result = <CategoryListPanel handleClick={this.changePanel} categoryList={movies}/>;
+        break;
+      case 'music-panel':
+        var result = <CategoryListPanel handleClick={this.changePanel} categoryList={music}/>;
+        break;
+      case 'books-panel':
+        var result = <CategoryListPanel handleClick={this.changePanel} categoryList={books}/>;
+        break;
+      case 'places-panel':
+        var result = <CategoryListPanel handleClick={this.changePanel} categoryList={places}/>;
+        break;
+      case 'quotes-panel':
+        var result = <CategoryListPanel handleClick={this.changePanel} categoryList={quotes}/>;
+        break;
+      case 'shows-panel':
+        var result = <CategoryListPanel handleClick={this.changePanel} categoryList={shows}/>;
+        break;
+      default:
+        var result = 
+          <div>
+            <div onClick={() => this.changePanel('mission-panel')}>
+              <br/>Missions & Goals
+            </div>
+            <div onClick={() => this.changePanel('gaming-panel')}>
+              <br/>Gaming
+            </div>
+            <div onClick={() => this.changePanel('sports-panel')}>
+              <br/>Sports
+            </div>
+            <div onClick={() => this.changePanel('movies-panel')}>
+              <br/>Movies
+            </div>
+            <div onClick={() => this.changePanel('music-panel')}>
+              <br/>Music
+            </div>
+            <div onClick={() => this.changePanel('books-panel')}>
+              <br/>Books
+            </div>
+            <div onClick={() => this.changePanel('places-panel')}>
+              <br/>Places
+            </div>
+            <div onClick={() => this.changePanel('quotes-panel')}>
+              <br/>Quotes
+            </div>
+            <div onClick={() => this.changePanel('shows-panel')}>
+              <br/>Shows
+            </div>
+            <button onClick={this.props.handleClick}>Back to Landing</button>
+          </div>;
+    }
     return (
       <div className='contentWindow'>
-        <svg width='400' height='400'>
-          <circle r='100' cx='200' cy='200'/>
-        </svg>
-        <button onClick={this.props.handleClick}>Back to Landing</button>
+        {result}
       </div>
+    );
+  }
+});
+
+var CategoryListPanel = React.createClass({
+  handleChange: function() {
+    this.props.handleClick('main-panel');
+  },
+
+  render: function() {
+    var rows = [];
+    this.props.categoryList.forEach(function(product) {
+      rows.push(<CategoryListRow product={product} key={product.name} />);
+    }.bind(this));
+    return (
+      <div>
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+            </tr>
+          </thead>
+          <tbody>{rows}</tbody>
+        </table>
+        <button onClick={this.handleChange}>Back to Personal Journey Overview</button>
+      </div>
+    );
+  }
+});
+
+var CategoryListRow = React.createClass({
+  render: function() {
+    return (
+      <tr>
+        <td>{this.props.product.name}</td>
+      </tr>
     );
   }
 });
@@ -356,10 +520,6 @@ var App = React.createClass({
     );
   }
 });
-
-var brands = [
-  'a developer', 'happy', 'a gamer', 'optimistic', 'a tennis player', 'jolly', 'an adventurer', 'unbound'
-];
 
 ReactDOM.render(
   <App brands={brands} />,
