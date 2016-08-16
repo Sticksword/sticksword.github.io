@@ -125,7 +125,6 @@ var PortalBox = React.createClass({
         <h3>DEVELOPER JOURNEY</h3>
         <h4>cat /var/log/bugs4days.txt</h4>
         <div>Quick Links</div>
-        <br/>
         <div>
           <div className='portalLink'>GitHub</div>
           <div className='portalLink'>LinkedIn</div>
@@ -136,7 +135,6 @@ var PortalBox = React.createClass({
         <h3>PERSONAL JOURNEY</h3>
         <h4>cat /var/log/life.txt</h4>
         <div>Quick Links</div>
-        <br/>
         <div>
           <div className='portalLink'>Medium</div>
           <div className='portalLink'>Quora</div>
@@ -168,16 +166,16 @@ var DevWindow = React.createClass({
       var result = 
         <div>
           <div className='linkBox' onClick={() => this.changePanel('courses-taken-panel')}>
-            <br/>Courses Taken
+            Courses Taken
           </div>
           <div className='linkBox' onClick={() => this.changePanel('online-presence-panel')}>
-            <br/>Online Interactions
+            Online Interactions
           </div>
           <div className='linkBox' onClick={() => this.changePanel('hackathon-panel')}>
-            <br/>Hackathons
+            Hackathons
           </div>
           <div className='linkBox' onClick={() => this.changePanel('skills-panel')}>
-            <br/>Skills
+            Skills
           </div>
           <button onClick={this.props.handleClick}>Back to Landing</button>
         </div>
@@ -531,9 +529,7 @@ var App = React.createClass({
     return (
       <div>
         <Greetings brands={this.props.brands}/>
-        <ReactCSSTransitionGroup transitionName="example" transitionEnterTimeout={1000} transitionLeaveTimeout={1000}>
           {result}
-        </ReactCSSTransitionGroup>
         <Footer/>
       </div>
     );
