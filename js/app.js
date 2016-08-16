@@ -119,29 +119,45 @@ var brands = [
 ================================================== */
 
 var PortalBox = React.createClass({
+  openLink: function(url) {
+    var win = window.open(url, '_blank');
+    win.focus();
+  },
+
+  y_no_listen: function() {
+    alert('Why did you not listen!?');
+  },
+
   render: function() {
     var result = this.props.portalType == 'dev' ?
       <div className='portalBox'>
-        <h3>DEVELOPER JOURNEY</h3>
-        <h4>cat /var/log/bugs4days.txt</h4>
-        <div>Quick Links</div>
+        <div onClick={this.props.handleClick}>
+          <h3>DEVELOPER JOURNEY</h3>
+          <h4>cat /var/log/bugs4days.txt</h4>
+          <div>Quick Links</div>
+        </div>
+        <hr/>
         <div>
-          <div className='portalLink'>GitHub</div>
-          <div className='portalLink'>LinkedIn</div>
-          <div className='portalLink'>Resume</div>
+          <div className='portalLink' onClick={() => this.openLink('https://www.github.com/sticksword')}>GitHub</div>
+          <div className='portalLink' onClick={() => this.openLink('https://www.linkedin.com/in/stoicsleeper')}>LinkedIn</div>
+          <div className='portalLink' onClick={() => this.openLink('https://sticksword.github.io/michael_chen_resume.pdf')}>Resume</div>
         </div>
       </div>:
       <div className='portalBox'>
-        <h3>PERSONAL JOURNEY</h3>
-        <h4>cat /var/log/life.txt</h4>
-        <div>Quick Links</div>
+        <div onClick={this.props.handleClick}>
+          <h3>PERSONAL JOURNEY</h3>
+          <h4>cat /var/log/life.txt</h4>
+          <div>Quick Links</div>
+        </div>
+        <hr/>
         <div>
-          <div className='portalLink'>Medium</div>
-          <div className='portalLink'>Quora</div>
+          <div className='portalLink' onClick={() => this.openLink('https://medium.com/@Stoic.Sleeper')}>Medium</div>
+          <div className='portalLink' onClick={() => this.openLink('https://www.quora.com/profile/Michael-Chen-168')}>Quora</div>
+          <div className='portalLink' onClick={this.y_no_listen}>Do not click!!</div>
         </div>
       </div>;
     return (
-      <div onClick={this.props.handleClick}>
+      <div>
         {result}
       </div>
     );
