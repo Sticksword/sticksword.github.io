@@ -10,8 +10,8 @@ var cs_courses = [
   {name: 'Mobile Application Development', number: 'CS 4720'},
   {name: 'Artificial Intelligence', number: 'CS 4710'},
   {name: 'Operating Systems', number: 'CS 4414'},
-  {name: 'Big Data and Visual Search', number: '4501/5501'},
-  {name: 'Information Retrieval', number: '4501/5501'},
+  {name: 'Big Data and Visual Search', number: 'CS 4501/5501'},
+  {name: 'Information Retrieval', number: 'CS 4501/5501'},
   {name: 'Algorithms', number: 'CS 4102'},
   {name: 'Computer Architecture', number: 'CS 3330'},
   {name: 'Advanced Software Developerment', number: 'CS 3240'},
@@ -47,6 +47,7 @@ var missions = [
   {name: 'Wrap up front-end explorations'},
   {name: 'Deploy MVP Django API'},
   {name: 'Learn more Spring!'},
+  {name: '^More like a TODO list...'},
 ];
 
 var games = [
@@ -61,12 +62,14 @@ var games = [
 var sports = [
   {name: 'Tennis'},
   {name: 'Basketball'},
+  {name: 'eSports :)'},
   {name: ''},
 ];
 
 var movies = [
   {name: 'The Prestige'},
   {name: 'Cloud Atlas'},
+  {name: 'Coherence'},
   {name: ''},
 ];
 
@@ -75,15 +78,22 @@ var music = [
   {name: 'Trance'},
   {name: 'House'},
   {name: 'Trap'},
+  {name: 'Techno'},
+  {name: 'Piano'},
+  {name: 'Game and movie OST\'s'},
   {name: 'R & B'},
 ];
 
 var books = [
+  {name: 'What Got You Here Won\'t Get You There'},
+  {name: 'How to Make Friends and Influence People'},
   {name: 'Elon Musk: Tesla, SpaceX, and the Quest for a Fantastic Future'},
   {name: 'How Google Works'},
   {name: 'Zero to One'},
   {name: 'The Startup of You'},
-  {name: ''},
+  {name: 'The Design of Everyday Things'},
+  {name: 'The Intelligent Investor'},
+  {name: 'Random Walk Down Wall Street'},
 ];
 
 var places = [
@@ -100,7 +110,7 @@ var quotes = [
   {name: 'Life is about your slope, not your y-intercept.'},
   {name: 'It is not how hard you hit, but how hard you get hit and keep moving forward.'},
   {name: 'If you give people the opportunity to do the right thing, you will rarely be disappointed'},
-  {name: ''},
+  {name: 'If a stranger and I each get on a treadmill, either the stranger steps off first or I am going to die on the treadmill.'},
 ];
 
 var shows = [
@@ -211,26 +221,60 @@ var DevWindow = React.createClass({
 });
 
 var CoursesTakenPanel = React.createClass({
+  getInitialState: function() {
+    return { focused: 0 };
+  },
+
+  clicked: function(index) {
+    this.setState({focused: index});
+  },
+
   handleChange: function() {
     this.props.handleClick('dev-panel');
   },
 
   render: function() {
-    var cs_rows = [];
-    cs_courses.forEach(function(product) {
-      cs_rows.push(<CourseRow product={product} key={product.name}/>);
+    var self = this;
+    var rows = [];
+
+    var second_col = self.state.focused == 0 ? <th>Number</th> : null;
+    var course_type = ['CS', 'Econ/Math', 'Online'];
+    if (self.state.focused == 0) {
+      var courses = cs_courses;
+    } else if (self.state.focused == 1) {
+      var courses = econ_math_courses;
+    } else {
+      var courses = online_courses;
+    }
+    courses.forEach(function(product) {
+      rows.push(<CourseRow product={product} key={product.name}/>);
     }.bind(this));
     return (
       <div>
         <h3>Big thank you to the University of Virginia for my dual majors in CS and Finance!</h3>
+        <ul>{ course_type.map(function(m, index){
+
+          var style = '';
+
+          if(self.state.focused == index){
+              style = 'focused';
+          }
+
+          // Notice the use of the bind() method. It makes the
+          // index available to the clicked function:
+          return <li className={style} key={m} onClick={self.clicked.bind(self, index)}>{m}</li>;
+
+        }) }
+              
+        </ul>
         <table>
           <thead>
             <tr>
               <th>Course Name</th>
-              <th>Number</th>
+              {second_col}
             </tr>
           </thead>
-          <tbody>{cs_rows}</tbody>
+          <tbody>{rows}</tbody>
         </table>
         <button onClick={this.handleChange}>Back to Developer Window</button>
       </div>
@@ -240,10 +284,11 @@ var CoursesTakenPanel = React.createClass({
 
 var CourseRow = React.createClass({
   render: function() {
+    var num = this.props.product.number ? <td>{this.props.product.number}</td> : null;
     return (
       <tr>
         <td>{this.props.product.name}</td>
-        <td>{this.props.product.number}</td>
+        {num}
       </tr>
     );
   }
@@ -293,7 +338,18 @@ var HackathonPanel = React.createClass({
         <p>
           I am a hackathon enthusiast.
           You can find some of my past projects on <a href='http://devpost.com/leeroychenkins'>Devpost</a>.
-          I have participated in many, ranging from HackMIT to BitCamp to a hackathon hosted by JP Morgan.
+          I have participated in many:
+          <ul>
+            <li>Hack.UVA</li>
+            <li>Ramhacks</li>
+            <li>PennApps</li>
+            <li>HackMIT</li>
+            <li>JP Morgan Code for Good</li>
+            <li>HackDuke</li>
+            <li>HackPrinceton</li>
+            <li>HackVT</li>
+            <li>Hack the North</li>
+          </ul>
           You should check one out sometime. Swag on swag on swag!!
         </p>
         <button onClick={this.handleChange}>Back to Developer Window</button>

@@ -74,7 +74,31 @@ hr {
 
 .contentWindow {
   width: 100%;
-  height: 450px;
+  height: 500px;
   transition: opacity 500ms ease-in;
+}
+
+ul{
+  list-style:none;
+  display: inline-block;
+}
+
+ul li{
+  display: inline-block;
+  padding: 10px 20px;
+  cursor:pointer;
+  background-color:#eee;
+  color:#7B8585;
+  
+  transition:0.3s;
+}
+
+ul li:hover{
+  background-color:#beecea;
+}
+
+ul li.focused{
+  color:#fff;
+  background-color:#41c7c2;
 }
 
