@@ -347,6 +347,8 @@ var HackathonPanel = React.createClass({
             <li>JP Morgan Code for Good</li>
             <li>HackDuke</li>
             <li>HackPrinceton</li>
+            <li>MHacks</li>
+            <li>BitCamp</li>
             <li>HackVT</li>
             <li>Hack the North</li>
           </ul>
