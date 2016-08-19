@@ -72,7 +72,6 @@ var missions = [
   {name: 'Build gaming/dev rig'},
   {name: 'Get Masters in CS'},
   {name: 'Explore and Absorb Bae Area'},
-  {name: 'Wrap up front-end explorations'},
   {name: 'Deploy MVP Django API'},
   {name: 'Learn more Spring!'},
   {name: '^More like a TODO list...'},
@@ -474,7 +473,7 @@ var PersonalWindow = React.createClass({
         var result = <CategoryListPanel handleClick={this.changePanel} categoryList={missions}/>;
         break;
       case 'gaming-panel':
-        var result = <CategoryListPanel handleClick={this.changePanel} categoryList={games}/>;
+        var result = <CategoryListPanel handleClick={this.changePanel} categoryList={games} link={''}/>;
         break;
       case 'sports-panel':
         var result = <CategoryListPanel handleClick={this.changePanel} categoryList={sports}/>;
