@@ -40,6 +40,34 @@ var econ_math_courses = [
   {name: 'Multivariable Calculus'}
 ];
 
+var backend = [
+  {name: 'Python & Django, Django Rest Framework, Flask, pip, virtualenv'},
+  {name: 'Node & Express, npm'},
+  {name: 'Java & Spring'},
+  {name: 'Databases: MySQL, MongoDB'},
+  {name: 'Tools: AWS, Heroku, Firebase'},
+];
+
+var frontend = [
+  {name: 'TypeScript'},
+  {name: 'React'},
+  {name: 'Modular CSS'},
+  {name: 'Angular 2'},
+  {name: 'Bower'},
+  {name: 'Grunt & Gulp'},
+];
+
+var mobile = [
+  {name: 'Swift & iOS & XCode'},
+  {name: 'Java & Android & Android Studio'},
+  {name: 'Angular & Ionic & Sublime'}
+];
+
+var data_sci = [
+  {name: 'Python & numpy, pandas, scipy, tensorflow, matplotlib'},
+  {name: 'R & ggplot'},
+];
+
 var missions = [
   {name: 'Build gaming/dev rig'},
   {name: 'Get Masters in CS'},
@@ -56,7 +84,7 @@ var games = [
   {name: 'HoN'},
   {name: 'Starcraft 2'},
   {name: 'Talos Principle'},
-  {name: ''},
+  {name: 'POKEMON GO'},
 ];
 
 var sports = [
@@ -117,7 +145,7 @@ var shows = [
   {name: 'Game of Thrones'},
   {name: 'Batman'},
   {name: 'Justice League'},
-  {name: ''},
+  {name: 'YouTube!!'},
 ];
 
 var brands = [
@@ -135,7 +163,7 @@ var PortalBox = React.createClass({
   },
 
   y_no_listen: function() {
-    alert('Why did you not listen!?');
+    alert(`¯\\_(ツ)_/¯`);
   },
 
   render: function() {
@@ -252,20 +280,18 @@ var CoursesTakenPanel = React.createClass({
     return (
       <div>
         <h3>Big thank you to the University of Virginia for my dual majors in CS and Finance!</h3>
-        <ul>{ course_type.map(function(m, index){
-
-          var style = '';
-
-          if(self.state.focused == index){
-              style = 'focused';
-          }
-
-          // Notice the use of the bind() method. It makes the
-          // index available to the clicked function:
-          return <li className={style} key={m} onClick={self.clicked.bind(self, index)}>{m}</li>;
-
-        }) }
-              
+        <ul>
+          {
+            course_type.map(function(m, index){
+              var style = '';
+              if(self.state.focused == index){
+                style = 'focused';
+              }
+              // Notice the use of the bind() method. It makes the
+              // index available to the clicked function:
+              return <li className={style} key={m} onClick={self.clicked.bind(self, index)}>{m}</li>;
+            })
+          } 
         </ul>
         <table>
           <thead>
@@ -338,22 +364,21 @@ var HackathonPanel = React.createClass({
         <p>
           I am a hackathon enthusiast.
           You can find some of my past projects on <a href='http://devpost.com/leeroychenkins'>Devpost</a>.
-          I have participated in many:
-          <ul>
-            <li>Hack.UVA</li>
-            <li>Ramhacks</li>
-            <li>PennApps</li>
-            <li>HackMIT</li>
-            <li>JP Morgan Code for Good</li>
-            <li>HackDuke</li>
-            <li>HackPrinceton</li>
-            <li>MHacks</li>
-            <li>BitCamp</li>
-            <li>HackVT</li>
-            <li>Hack the North</li>
-          </ul>
-          You should check one out sometime. Swag on swag on swag!!
+          I have participated in many. You should check one out sometime. Swag on swag on swag!!
         </p>
+        <ul>
+          <li>Hack.UVA</li>
+          <li>Ramhacks</li>
+          <li>PennApps</li>
+          <li>HackMIT</li>
+          <li>JP Morgan Code for Good</li>
+          <li>HackDuke</li>
+          <li>HackPrinceton</li>
+          <li>MHacks</li>
+          <li>BitCamp</li>
+          <li>HackVT</li>
+          <li>Hack the North</li>
+        </ul>
         <button onClick={this.handleChange}>Back to Developer Window</button>
       </div>
     );
@@ -361,19 +386,71 @@ var HackathonPanel = React.createClass({
 });
 
 var SkillsPanel = React.createClass({
+  getInitialState: function() {
+    return { focused: 0 };
+  },
+
+  clicked: function(index) {
+    this.setState({focused: index});
+  },
+
   handleChange: function() {
     this.props.handleClick('dev-panel');
   },
 
   render: function() {
+    var self = this;
+    var rows = [];
     
+    var skill_type = ['Backend', 'Frontend', 'Mobile', 'Data-sci'];
+    if (self.state.focused == 0) {
+      var skills = backend;
+    } else if (self.state.focused == 1) {
+      var skills = frontend;
+    } else if (self.state.focused == 2) {
+      var skills = mobile;
+    } else {
+      var skills = data_sci;
+    }
+    skills.forEach(function(product) {
+      rows.push(<SkillRow product={product} key={product.name}/>);
+    }.bind(this));
+
     return (
       <div>
-        <div>
-          TODO: set up frontend, backend, mobile, data science tabs
-        </div>
+        <ul>
+          {
+            skill_type.map(function(m, index){
+              var style = '';
+              if(self.state.focused == index){
+                style = 'focused';
+              }
+              // Notice the use of the bind() method. It makes the
+              // index available to the clicked function:
+              return <li className={style} key={m} onClick={self.clicked.bind(self, index)}>{m}</li>;
+            })
+          } 
+        </ul>
+        <table>
+          <thead>
+            <tr>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>{rows}</tbody>
+        </table>
         <button onClick={this.handleChange}>Back to Developer Window</button>
       </div>
+    );
+  }
+});
+
+var SkillRow = React.createClass({
+  render: function() {
+    return (
+      <tr>
+        <td>{this.props.product.name}</td>
+      </tr>
     );
   }
 });
