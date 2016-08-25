@@ -24,7 +24,7 @@ var online_courses = [
   {name: 'Udacity: Deep Learning'},
   {name: 'Udacity: Interactive 3D Graphics'},
   {name: 'Coursera: Programming Mobile Apps for Android Handheld Systems Part I'},
-  {name: '<a href=\'https://www.codecademy.com/sticksword\'>Codecademy Tracks</a>'}
+  {name: 'Visit my completed Codecademy Tracks: https://www.codecademy.com/sticksword'}
 ];
 
 var econ_math_courses = [
