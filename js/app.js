@@ -24,7 +24,7 @@ var online_courses = [
   {name: 'Udacity: Deep Learning'},
   {name: 'Udacity: Interactive 3D Graphics'},
   {name: 'Coursera: Programming Mobile Apps for Android Handheld Systems Part I'},
-  {name: 'Codecademy.com/sticksword'}
+  {name: '<a href=\'https://www.codecademy.com/sticksword\'>Codecademy Tracks</a>'}
 ];
 
 var econ_math_courses = [
@@ -41,11 +41,11 @@ var econ_math_courses = [
 ];
 
 var backend = [
-  {name: 'Python & Django, Django Rest Framework, Flask, pip, virtualenv'},
+  {name: 'Python & Django, Django Rest Framework, Flask, pip, virtualenv, anaconda'},
   {name: 'Node & Express, npm'},
-  {name: 'Java & Spring'},
-  {name: 'Databases: MySQL, MongoDB'},
-  {name: 'Tools: AWS, Heroku, Firebase'},
+  {name: 'Java & Spring, Hibernate, Maven'},
+  {name: 'Databases: MySQL, MongoDB, Oracle DB'},
+  {name: 'Tools: AWS, Heroku, Firebase, Bash'},
 ];
 
 var frontend = [
@@ -73,7 +73,7 @@ var missions = [
   {name: 'Get Masters in CS'},
   {name: 'Explore and Absorb Bae Area'},
   {name: 'Deploy MVP Django API'},
-  {name: 'Learn more Spring!'},
+  {name: 'Win a hackathon!'},
   {name: '^More like a TODO list...'},
 ];
 
@@ -90,14 +90,15 @@ var sports = [
   {name: 'Tennis'},
   {name: 'Basketball'},
   {name: 'eSports :)'},
-  {name: ''},
+  {name: 'Ski/Snowboard/Surfing!!!'},
+  {name: 'I wanna skydive one day'}
 ];
 
 var movies = [
   {name: 'The Prestige'},
   {name: 'Cloud Atlas'},
   {name: 'Coherence'},
-  {name: ''},
+  {name: 'I Origins'},
 ];
 
 var music = [
@@ -121,6 +122,7 @@ var books = [
   {name: 'The Design of Everyday Things'},
   {name: 'The Intelligent Investor'},
   {name: 'Random Walk Down Wall Street'},
+  {name: 'I read too much non-fiction these days...'}
 ];
 
 var places = [
@@ -129,8 +131,8 @@ var places = [
   {name: 'New York'},
   {name: 'Massachusetts'},
   {name: 'Virginia'},
-  {name: 'California'},
-  {name: 'China'},
+  {name: 'California!!!'},
+  {name: 'Lots of places in China'},
 ];
 
 var quotes = [
@@ -148,7 +150,7 @@ var shows = [
 ];
 
 var brands = [
-  'a developer', 'happy', 'a gamer', 'optimistic', 'a tennis player', 'jolly', 'an adventurer', 'unbound'
+  'a software engineer', 'happy', 'a gamer', 'optimistic', 'a tennis player', 'jolly', 'an adventurer', 'unbound', 'a Musketeer', 'a code monkey!!'
 ];
 
 /* =================================================
