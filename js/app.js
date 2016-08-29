@@ -150,7 +150,7 @@ var shows = [
 ];
 
 var brands = [
-  'a software engineer', 'happy', 'a gamer', 'optimistic', 'a tennis player', 'jolly', 'an adventurer', 'unbound', 'a Musketeer', 'a code monkey!!'
+  'a software engineer.', 'jolly.', 'a gamer.', 'optimistic.', 'a tennis player.', 'filled with DETERMINATION.', 'an adventurer.', 'unbound.', 'a Musketeer.', 'consistent.', 'a code monkey!!'
 ];
 
 /* =================================================
@@ -606,7 +606,7 @@ var Greetings = React.createClass({
     return (
       <div>
         <h2>Hi, my name is Michael.</h2>
-        <h5>I am {this.props.brands[this.state.selection]}.</h5>
+        <h5>I am {this.props.brands[this.state.selection]}</h5>
       </div>
     );
   }
