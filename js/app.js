@@ -42,24 +42,27 @@ var econ_math_courses = [
 
 var backend = [
   {name: 'Python & Django, Django Rest Framework, Flask, pip, virtualenv, anaconda'},
-  {name: 'Node & Express, npm'},
+  {name: 'Node & Express, NPM & Yarn'},
   {name: 'Java & Spring, Hibernate, Maven'},
-  {name: 'Databases: MySQL, MongoDB, Oracle DB'},
+  {name: 'Databases: MySQL, MongoDB, Oracle DB, Redis'},
   {name: 'Tools: AWS, Heroku, Firebase, Bash'},
 ];
 
 var frontend = [
   {name: 'TypeScript'},
-  {name: 'React'},
+  {name: 'React & Flux & Webpack'},
   {name: 'Modular CSS'},
   {name: 'Angular 2'},
   {name: 'Bower'},
-  {name: 'Grunt & Gulp'},
+  {name: 'NPM & Gulp'},
+  {name: 'Three.js'},
+  {name: 'D3'},
 ];
 
 var mobile = [
   {name: 'Swift & iOS & XCode'},
   {name: 'Java & Android & Android Studio'},
+  {name: 'React Native'},
   {name: 'Angular & Ionic & Sublime'}
 ];
 
@@ -144,13 +147,15 @@ var quotes = [
 
 var shows = [
   {name: 'Game of Thrones'},
+  {name: 'Gotham'},
+  {name: 'Westworld'},
   {name: 'Batman'},
   {name: 'Justice League'},
   {name: 'YouTube!!'},
 ];
 
 var brands = [
-  'a software engineer.', 'jolly.', 'a gamer.', 'optimistic.', 'a tennis player.', 'filled with DETERMINATION.', 'an adventurer.', 'unbound.', 'a Musketeer.', 'consistent.', 'a code monkey!!'
+  'an explorer.', 'one with sadness.', 'a software engineer.', 'teeming with joy.', 'a gamer.', 'optimistic.', 'a tennis player.', 'filled with DETERMINATION.', 'an adventurer.', 'unbound.', 'a Musketeer.', 'consistent.', 'a code monkey!!'
 ];
 
 /* =================================================
@@ -218,7 +223,7 @@ var DevWindow = React.createClass({
 
   render: function() {
     if (this.state.panel == 'dev-panel') {
-      var result = 
+      var result =
         <div>
           <div className='linkBox' onClick={() => this.changePanel('courses-taken-panel')}>
             Courses Taken
@@ -292,7 +297,7 @@ var CoursesTakenPanel = React.createClass({
               // index available to the clicked function:
               return <li className={style} key={m} onClick={self.clicked.bind(self, index)}>{m}</li>;
             })
-          } 
+          }
         </ul>
         <table>
           <thead>
@@ -332,7 +337,7 @@ var OnlinePresencePanel = React.createClass({
   },
 
   render: function() {
-    
+
     return (
       <div>
         <div className='linkBox' onClick={() => this.openLink('http://stackoverflow.com/users/3903274/sticky')}>
@@ -359,7 +364,7 @@ var HackathonPanel = React.createClass({
   },
 
   render: function() {
-    
+
     return (
       <div>
         <p>
@@ -402,7 +407,7 @@ var SkillsPanel = React.createClass({
   render: function() {
     var self = this;
     var rows = [];
-    
+
     var skill_type = ['Backend', 'Frontend', 'Mobile', 'Data-sci'];
     if (self.state.focused == 0) {
       var skills = backend;
@@ -430,7 +435,7 @@ var SkillsPanel = React.createClass({
               // index available to the clicked function:
               return <li className={style} key={m} onClick={self.clicked.bind(self, index)}>{m}</li>;
             })
-          } 
+          }
         </ul>
         <table>
           <thead>
@@ -499,7 +504,7 @@ var PersonalWindow = React.createClass({
         var result = <CategoryListPanel handleClick={this.changePanel} categoryList={shows}/>;
         break;
       default:
-        var result = 
+        var result =
           <div>
             <div className='personalLinkBox' onClick={() => this.changePanel('mission-panel')}>
               Missions & Goals
@@ -602,7 +607,7 @@ var Greetings = React.createClass({
   },
 
   render: function() {
-    
+
     return (
       <div>
         <h2>Hi, my name is Michael.</h2>
@@ -618,7 +623,7 @@ var Greetings = React.createClass({
 
 var Footer = React.createClass({
   render: function() {
-    
+
     return (
       <div>
         <h5>Crafted with &hearts;</h5>
@@ -668,7 +673,7 @@ var App = React.createClass({
 
   render: function() {
     if (this.state.window == 'main-window') {
-      var result = 
+      var result =
         <div key={'main'} className='contentWindow'>
           <PortalBox portalType={'dev'} handleClick={this.changeToDev}/>
           <PortalBox portalType={'personal'} handleClick={this.changeToPersonal}/>
