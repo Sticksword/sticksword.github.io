@@ -190,7 +190,7 @@ var PortalBox = React.createClass({
       <div className='portalBox'>
         <div onClick={this.props.handleClick}>
           <h3>PERSONAL JOURNEY</h3>
-          <h4>cat /var/log/life.txt</h4>
+          <h4>Dear Diary...</h4>
           <div>Quick Links</div>
         </div>
         <hr/>
