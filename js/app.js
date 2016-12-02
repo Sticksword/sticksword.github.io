@@ -143,6 +143,10 @@ var quotes = [
   {name: 'It is not how hard you hit, but how hard you get hit and keep moving forward.'},
   {name: 'If you give people the opportunity to do the right thing, you will rarely be disappointed'},
   {name: 'If a stranger and I each get on a treadmill, either the stranger steps off first or I am going to die on the treadmill.'},
+  {name: 'Sometimes it is the very people who no one imagines anything of who do the things no one can imagine.'},
+  {name: 'My life amounts to no more than one drop in a limitless ocean. Yet what is any ocean, but a multitude of drops?'},
+  {name: 'Change your thoughts and you change your world.'},
+  {name: 'Our lives are not our own. We are bound to others, past and present, and by each crime and every kindness, we birth our future.'},
 ];
 
 var shows = [
