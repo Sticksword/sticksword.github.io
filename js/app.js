@@ -66,8 +66,9 @@ var mobile = [
   {name: 'Angular & Ionic & Sublime'}
 ];
 
-var data_sci = [
-  {name: 'Python & numpy, pandas, scipy, tensorflow, matplotlib'},
+var machine_learning = [
+  {name: 'Python & numpy, pandas, sklearn, tensorflow, matplotlib'},
+  {name: 'Java and Weka/ABIGAIL'},
   {name: 'R & ggplot'},
 ];
 
@@ -412,7 +413,7 @@ var SkillsPanel = React.createClass({
     var self = this;
     var rows = [];
 
-    var skill_type = ['Backend', 'Frontend', 'Mobile', 'Data-sci'];
+    var skill_type = ['Backend', 'Frontend', 'Mobile', 'Machine Learning'];
     if (self.state.focused == 0) {
       var skills = backend;
     } else if (self.state.focused == 1) {
@@ -420,7 +421,7 @@ var SkillsPanel = React.createClass({
     } else if (self.state.focused == 2) {
       var skills = mobile;
     } else {
-      var skills = data_sci;
+      var skills = machine_learning;
     }
     skills.forEach(function(product) {
       rows.push(<SkillRow product={product} key={product.name}/>);
