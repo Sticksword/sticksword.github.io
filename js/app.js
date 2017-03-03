@@ -1,6 +1,7 @@
 /* =================================================
  * Init Variables
  * NOTE: should migrate to an actual DB someday...
+ * FOLLOW UP NOTE: SHOULD DO A LOT OF THINGS SUCH AS MOVE EACH COMPONENT TO SEPARATE FILE. IF YOU'RE READING THIS, PLEASE DONT READ ANYMORE.
 ================================================== */
 var ReactCSSTransitionGroup = React.addons.CSSTransitionGroup;
 
