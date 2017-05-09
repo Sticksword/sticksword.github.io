@@ -376,20 +376,21 @@ var HackathonPanel = React.createClass({
         <p>
           I am a hackathon enthusiast.
           You can find some of my past projects on <a href='http://devpost.com/leeroychenkins'>Devpost</a>.
-          I have participated in many. You should check one out sometime. Swag on swag on swag!!
+          Below are some that I have participated in. You should check one out sometime. Swag on swag on swag!!
         </p>
         <ul>
-          <li>Hack.UVA</li>
-          <li>Ramhacks</li>
+          <li>Hack.UVA (past winner)</li>
+          <li>Ramhacks (past winner)</li>
           <li>PennApps</li>
           <li>HackMIT</li>
           <li>JP Morgan Code for Good</li>
-          <li>HackDuke</li>
+          <li>HackDuke (past finalist)</li>
           <li>HackPrinceton</li>
-          <li>MHacks</li>
-          <li>BitCamp</li>
+          <li><a href="http://www.hackathon.io/to-be3">AngelHacks (past winner)</a></li>
+          <li>UVA Datafest</li>
           <li>HackVT</li>
           <li>Hack the North</li>
+          <li><a href="https://2017.spaceappschallenge.org/challenges/our-ecological-neighborhood/our-planet-our-home/teams/far-east-farmers/project">SpaceApps Global Nominee</a></li>
         </ul>
         <button onClick={this.handleChange}>Back to Developer Window</button>
       </div>
