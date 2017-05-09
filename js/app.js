@@ -74,12 +74,13 @@ var machine_learning = [
 ];
 
 var missions = [
-  {name: 'Build gaming/dev rig U+2714'},
-  {name: 'Get Masters in CS'},
-  {name: 'Explore and Absorb Bae Area'},
-  {name: 'Deploy MVP Django API'},
-  {name: 'Win a hackathon!'},
-  {name: '^More like a TODO list...'},
+  {name: 'Kick ass @ Square [ ]'},
+  {name: 'Raise self standards for future wife [ ]'},
+  {name: 'Build gaming/dev rig [&#10004;]'},
+  {name: 'Finish Masters in CS [ ]'},
+  {name: 'Explore and Absorb Bae Area [&#10004;]'},
+  {name: 'Deploy MVP API [&#10004;]'},
+  {name: 'Win a hackathon! [&#10004;]'}
 ];
 
 var games = [
