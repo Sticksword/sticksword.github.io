@@ -74,7 +74,7 @@ var machine_learning = [
 ];
 
 var missions = [
-  {name: 'Build gaming/dev rig'},
+  {name: 'Build gaming/dev rig U+2714'},
   {name: 'Get Masters in CS'},
   {name: 'Explore and Absorb Bae Area'},
   {name: 'Deploy MVP Django API'},
@@ -155,13 +155,15 @@ var shows = [
   {name: 'Game of Thrones'},
   {name: 'Gotham'},
   {name: 'Westworld'},
+  {name: 'Dragon Ball Super'},
+  {name: 'Samurai Jack!!!!'},
   {name: 'Batman'},
   {name: 'Justice League'},
   {name: 'YouTube!!'},
 ];
 
 var brands = [
-  'an explorer.', 'one with sadness.', 'a software engineer.', 'teeming with joy.', 'a gamer.', 'optimistic.', 'a tennis player.', 'filled with DETERMINATION.', 'an adventurer.', 'unbound.', 'a Musketeer.', 'consistent.', 'a code monkey!!'
+  'an explorer.', 'one with sadness.', 'a software engineer.', 'teeming with joy.', 'a Square.', 'a believer.', 'a gamer.', 'optimistic.', 'a tennis player.', 'filled with DETERMINATION.', 'an adventurer.', 'unbound.', 'a Musketeer.', 'consistent.', 'a code monkey!!'
 ];
 
 /* =================================================
@@ -379,7 +381,7 @@ var HackathonPanel = React.createClass({
           Below are some that I have participated in. You should check one out sometime. Swag on swag on swag!!
         </p>
         <ul>
-          <li>Hack.UVA (past winner)</li>
+          <li>Hack.UVA (past winner and mentor)</li>
           <li>Ramhacks (past winner)</li>
           <li>PennApps</li>
           <li>HackMIT</li>
@@ -391,6 +393,7 @@ var HackathonPanel = React.createClass({
           <li>HackVT</li>
           <li>Hack the North</li>
           <li><a href="https://2017.spaceappschallenge.org/challenges/our-ecological-neighborhood/our-planet-our-home/teams/far-east-farmers/project">SpaceApps Global Nominee</a></li>
+          <li>TreeHacks</li>
         </ul>
         <button onClick={this.handleChange}>Back to Developer Window</button>
       </div>
