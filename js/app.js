@@ -25,7 +25,7 @@ var online_courses = [
   {name: 'Udacity: Deep Learning'},
   {name: 'Udacity: Interactive 3D Graphics'},
   {name: 'Coursera: Programming Mobile Apps for Android Handheld Systems Part I'},
-  {name: 'Visit my completed Codecademy Tracks: https://www.codecademy.com/sticksword'}
+  {name: '<a href="https://www.codecademy.com/sticksword">Completed Codecademy Tracks</a>'}
 ];
 
 var econ_math_courses = [
@@ -42,6 +42,7 @@ var econ_math_courses = [
 ];
 
 var backend = [
+  {name: 'Ruby & Rails'},
   {name: 'Python & Django, Django Rest Framework, Flask, pip, virtualenv, anaconda'},
   {name: 'Node & Express, NPM & Yarn'},
   {name: 'Java & Spring, Hibernate, Maven'},
@@ -53,9 +54,9 @@ var frontend = [
   {name: 'TypeScript'},
   {name: 'React & Flux & Webpack'},
   {name: 'Modular CSS'},
-  {name: 'Angular 2'},
+  {name: 'Ember'},
   {name: 'Bower'},
-  {name: 'NPM & Gulp'},
+  {name: 'NPM'},
   {name: 'Three.js'},
   {name: 'D3'},
 ];
@@ -64,7 +65,7 @@ var mobile = [
   {name: 'Swift & iOS & XCode'},
   {name: 'Java & Android & Android Studio'},
   {name: 'React Native'},
-  {name: 'Angular & Ionic & Sublime'}
+  {name: 'Angular & Ionic'}
 ];
 
 var machine_learning = [
@@ -86,9 +87,12 @@ var missions = [
 ];
 
 var games = [
+  {name: 'Breath of the Wild'},
   {name: 'Hearthstone'},
   {name: 'Undertale'},
-  {name: 'HoN'},
+  {name: 'Last of Us'},
+  {name: 'Sm4sh'},
+  {name: 'Heroes of Newerth'},
   {name: 'Starcraft 2'},
   {name: 'Talos Principle'},
   {name: 'POKEMON GO'},
@@ -98,8 +102,8 @@ var sports = [
   {name: 'Tennis'},
   {name: 'Basketball'},
   {name: 'eSports :)'},
-  {name: 'Ski/Snowboard/Surfing!!!'},
-  {name: 'I wanna skydive one day'}
+  {name: 'Ski/Snowboard/Surf'},
+  {name: 'I wanna skydive one day!!'}
 ];
 
 var movies = [
@@ -107,6 +111,10 @@ var movies = [
   {name: 'Cloud Atlas'},
   {name: 'Coherence'},
   {name: 'I Origins'},
+  {name: 'Dark Knight'},
+  {name: 'La La Land'},
+  {name: 'Inside Out'},
+  {name: 'Arrival'},
 ];
 
 var music = [
@@ -130,6 +138,8 @@ var books = [
   {name: 'The Design of Everyday Things'},
   {name: 'The Intelligent Investor'},
   {name: 'Random Walk Down Wall Street'},
+  {name: 'Creativity Inc.'},
+  {name: 'The Hard Thing About Hard Things'},
   {name: 'I read too much non-fiction these days...'}
 ];
 
@@ -140,7 +150,7 @@ var places = [
   {name: 'Massachusetts'},
   {name: 'Virginia'},
   {name: 'California!!!'},
-  {name: 'Lots of places in China'},
+  {name: 'Xi`an, Shanghai, Hangzhou in China'},
 ];
 
 var quotes = [
@@ -166,7 +176,7 @@ var shows = [
 ];
 
 var brands = [
-  'an explorer.', 'one with sadness.', 'a software engineer.', 'teeming with joy.', 'a Square.', 'a believer.', 'a gamer.', 'optimistic.', 'a tennis player.', 'filled with DETERMINATION.', 'an adventurer.', 'unbound.', 'a Musketeer.', 'consistent.', 'a code monkey!!'
+  'an explorer.', 'one with sadness.', 'a software engineer.', 'teeming with joy.', 'a Square.', 'excited.', 'a believer.', 'a gamer.', 'optimistic.', 'a tennis player.', 'filled with DETERMINATION.', 'an adventurer.', 'unbound.', 'a Musketeer.', 'consistent.', 'a code monkey!!'
 ];
 
 /* =================================================
