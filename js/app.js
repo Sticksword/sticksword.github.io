@@ -76,7 +76,7 @@ var machine_learning = [
 
 var missions = [
   {name: 'Kick ass @ Square [ ]'},
-  {name: 'Raise self standards for future wife [ ]'},
+  {name: 'Raise self standards for future shooting star wife [ ]'},
   {name: 'Deploy mini Dropbox product [ ]'},
   {name: 'Deploy J, your own nightly journaling assistant [ ]'},
   {name: 'Build gaming/dev rig [✔]'},
@@ -103,6 +103,7 @@ var sports = [
   {name: 'Basketball'},
   {name: 'eSports :)'},
   {name: 'Ski/Snowboard/Surf'},
+  {name: 'ran a mother f**** half marathon (never again)'},
   {name: 'I wanna skydive one day!!'}
 ];
 
@@ -126,6 +127,7 @@ var music = [
   {name: 'Piano'},
   {name: 'Game and movie OST\'s'},
   {name: 'R & B'},
+  {name: 'Canon in D'},
 ];
 
 var books = [
@@ -140,6 +142,7 @@ var books = [
   {name: 'Random Walk Down Wall Street'},
   {name: 'Creativity Inc.'},
   {name: 'The Hard Thing About Hard Things'},
+  {name: 'The Upstarts'},
   {name: 'I read too much non-fiction these days...'}
 ];
 
@@ -162,6 +165,7 @@ var quotes = [
   {name: 'My life amounts to no more than one drop in a limitless ocean. Yet what is any ocean, but a multitude of drops?'},
   {name: 'Change your thoughts and you change your world.'},
   {name: 'Our lives are not our own. We are bound to others, past and present, and by each crime and every kindness, we birth our future.'},
+  {name: 'A longing fulfilled is sweet to the soul :)'},
 ];
 
 var shows = [
