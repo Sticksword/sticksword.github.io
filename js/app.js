@@ -150,16 +150,19 @@ var books = [
 ];
 
 var places = [
-  {name: 'South Carolina'},
-  {name: 'Georgia'},
-  {name: 'New York'},
-  {name: 'Massachusetts'},
-  {name: 'Virginia'},
+  {name: 'Columbia & Myrtle, South Carolina'},
+  {name: 'Alpharetta and Atlanta, Georgia'},
+  {name: 'White Plains & Harrison, New York'},
+  {name: 'Boston and Cambridge, Massachusetts'},
+  {name: 'Charlottesville, Northern Virginia & DC'},
   {name: 'California!!!'},
+  {name: 'Seattle'},
+  {name: 'Portland'},
   {name: 'Xi`an, Shanghai, Hangzhou in China'},
 ];
 
 var quotes = [
+  {name: 'Know your audience.'},
   {name: 'Life is about your slope, not your y-intercept.'},
   {name: 'It is not how hard you hit, but how hard you get hit and keep moving forward.'},
   {name: 'If you give people the opportunity to do the right thing, you will rarely be disappointed'},
@@ -175,6 +178,7 @@ var shows = [
   {name: 'Game of Thrones'},
   {name: 'Gotham'},
   {name: 'Westworld'},
+  {name: 'Ri *hic* Rick & Morty'},
   {name: 'Dragon Ball Super'},
   {name: 'Samurai Jack!!!!'},
   {name: 'Batman'},
