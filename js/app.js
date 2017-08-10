@@ -112,10 +112,23 @@ var movies = [
   {name: 'Cloud Atlas'},
   {name: 'Coherence'},
   {name: 'I Origins'},
-  {name: 'Dark Knight'},
+  {name: 'Dark Knight Trilogy'},
   {name: 'La La Land'},
   {name: 'Inside Out'},
   {name: 'Arrival'},
+  {name: 'Pulp Fiction'},
+  {name: 'Basically all Miyazaki movies'},
+  {name: 'Back to the Future Trilogy'},
+  {name: 'The Matrix'},
+  {name: 'Ghost in the Shell (anime)'},
+  {name: 'Interstellar'},
+  {name: 'Memento'},
+  {name: 'The Shining'},
+  {name: 'Clockwork Orange'},
+  {name: '3 Idiots'},
+  {name: 'Blade Runner'},
+  {name: 'ROCKY'},
+  {name: 'probably forgot a bunch...'},
 ];
 
 var music = [
@@ -143,7 +156,7 @@ var books = [
   {name: 'Creativity Inc.'},
   {name: 'The Hard Thing About Hard Things'},
   {name: 'The Upstarts'},
-  {name: 'I read too much non-fiction these days...'}
+  {name: 'https://www.goodreads.com/user/show/63338558-michael'}
 ];
 
 var places = [
