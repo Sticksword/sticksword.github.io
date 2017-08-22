@@ -134,18 +134,15 @@ var music = [
 ];
 
 var books = [
-  {name: 'What Got You Here Won\'t Get You There'},
-  {name: 'How to Make Friends and Influence People'},
   {name: 'Elon Musk: Tesla, SpaceX, and the Quest for a Fantastic Future'},
-  {name: 'How Google Works'},
   {name: 'Zero to One'},
   {name: 'The Startup of You'},
   {name: 'The Design of Everyday Things'},
-  {name: 'The Intelligent Investor'},
   {name: 'Random Walk Down Wall Street'},
   {name: 'Creativity Inc.'},
   {name: 'The Hard Thing About Hard Things'},
   {name: 'The Upstarts'},
+  {name: 'The Sense of an Ending'},
   {name: 'https://www.goodreads.com/user/show/63338558-michael'}
 ];
 
@@ -172,6 +169,7 @@ var quotes = [
   {name: 'Change your thoughts and you change your world.'},
   {name: 'Our lives are not our own. We are bound to others, past and present, and by each crime and every kindness, we birth our future.'},
   {name: 'A longing fulfilled is sweet to the soul :)'},
+  {name: 'How lucky I am to have something that makes saying goodbye so hard.'},
 ];
 
 var shows = [
@@ -179,6 +177,7 @@ var shows = [
   {name: 'Gotham'},
   {name: 'Westworld'},
   {name: 'Ri *hic* Rick & Morty'},
+  {name: 'Black Mirror'},
   {name: 'Dragon Ball Super'},
   {name: 'Samurai Jack!!!!'},
   {name: 'Batman'},
@@ -187,7 +186,7 @@ var shows = [
 ];
 
 var brands = [
-  'an explorer.', 'one with sadness.', 'a software engineer.', 'teeming with joy.', 'a Square.', 'excited.', 'a believer.', 'a gamer.', 'optimistic.', 'a tennis player.', 'filled with DETERMINATION.', 'an adventurer.', 'unbound.', 'a Musketeer.', 'consistent.', 'a code monkey!!'
+  'an explorer.', 'grateful.', 'resilient.', 'one with sadness.', 'a software engineer.', 'teeming with joy.', 'a Square.', 'excited.', 'a believer.', 'a gamer.', 'optimistic.', 'a tennis player.', 'filled with DETERMINATION.', 'an adventurer.', 'unbound.', 'a Musketeer.', 'consistent.', 'a code monkey!!', 'a level 30+ Pokemon Go trainer.', 'team Valor!'
 ];
 
 /* =================================================
