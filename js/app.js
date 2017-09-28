@@ -25,7 +25,7 @@ var online_courses = [
   {name: 'Udacity: Deep Learning'},
   {name: 'Udacity: Interactive 3D Graphics'},
   {name: 'Coursera: Programming Mobile Apps for Android Handheld Systems Part I'},
-  {name: 'Visit my completed Codecademy Tracks: https://www.codecademy.com/sticksword'}
+  {name: '<a href="https://www.codecademy.com/sticksword">Completed Codecademy Tracks</a>'}
 ];
 
 var econ_math_courses = [
@@ -42,6 +42,7 @@ var econ_math_courses = [
 ];
 
 var backend = [
+  {name: 'Ruby & Rails'},
   {name: 'Python & Django, Django Rest Framework, Flask, pip, virtualenv, anaconda'},
   {name: 'Node & Express, NPM & Yarn'},
   {name: 'Java & Spring, Hibernate, Maven'},
@@ -53,9 +54,9 @@ var frontend = [
   {name: 'TypeScript'},
   {name: 'React & Flux & Webpack'},
   {name: 'Modular CSS'},
-  {name: 'Angular 2'},
+  {name: 'Ember'},
   {name: 'Bower'},
-  {name: 'NPM & Gulp'},
+  {name: 'NPM'},
   {name: 'Three.js'},
   {name: 'D3'},
 ];
@@ -64,7 +65,7 @@ var mobile = [
   {name: 'Swift & iOS & XCode'},
   {name: 'Java & Android & Android Studio'},
   {name: 'React Native'},
-  {name: 'Angular & Ionic & Sublime'}
+  {name: 'Angular & Ionic'}
 ];
 
 var machine_learning = [
@@ -74,18 +75,24 @@ var machine_learning = [
 ];
 
 var missions = [
-  {name: 'Build gaming/dev rig'},
-  {name: 'Get Masters in CS'},
-  {name: 'Explore and Absorb Bae Area'},
-  {name: 'Deploy MVP Django API'},
-  {name: 'Win a hackathon!'},
-  {name: '^More like a TODO list...'},
+  {name: 'Kick ass @ Square [ ]'},
+  {name: 'Raise self standards for future shooting star wife [ ]'},
+  {name: 'Deploy mini Dropbox product [ ]'},
+  {name: 'Deploy J, your own nightly journaling assistant [ ]'},
+  {name: 'Build gaming/dev rig [✔]'},
+  {name: 'Finish Masters in CS [ ]'},
+  {name: 'Explore and Absorb Bae Area [✔]'},
+  {name: 'Deploy MVP API [✔]'},
+  {name: 'Win a hackathon! [✔]'}
 ];
 
 var games = [
+  {name: 'Breath of the Wild'},
   {name: 'Hearthstone'},
   {name: 'Undertale'},
-  {name: 'HoN'},
+  {name: 'Last of Us'},
+  {name: 'Sm4sh'},
+  {name: 'Heroes of Newerth'},
   {name: 'Starcraft 2'},
   {name: 'Talos Principle'},
   {name: 'POKEMON GO'},
@@ -95,15 +102,23 @@ var sports = [
   {name: 'Tennis'},
   {name: 'Basketball'},
   {name: 'eSports :)'},
-  {name: 'Ski/Snowboard/Surfing!!!'},
-  {name: 'I wanna skydive one day'}
+  {name: 'Ski/Snowboard/Surf'},
+  {name: 'ran a mother f**** half marathon (never again)'},
+  {name: 'I wanna skydive one day!!'}
 ];
 
 var movies = [
-  {name: 'The Prestige'},
-  {name: 'Cloud Atlas'},
-  {name: 'Coherence'},
-  {name: 'I Origins'},
+  {name: 'The Prestige, Cloud Atlas, Coherence'},
+  {name: 'I Origins, Dark Knight Trilogy'},
+  {name: 'La La Land, Inside Out, Arrival'},
+  {name: 'Pulp Fiction, basically all Miyazaki movies'},
+  {name: 'Back to the Future Trilogy'},
+  {name: 'The Matrix, Ghost in the Shell (anime)'},
+  {name: 'Interstellar, Memento'},
+  {name: 'The Shining, Clockwork Orange'},
+  {name: '3 Idiots, Blade Runner'},
+  {name: 'ROCKY...'},
+  {name: 'probably forgot a bunch...'},
 ];
 
 var music = [
@@ -115,32 +130,36 @@ var music = [
   {name: 'Piano'},
   {name: 'Game and movie OST\'s'},
   {name: 'R & B'},
+  {name: 'Canon in D'},
 ];
 
 var books = [
-  {name: 'What Got You Here Won\'t Get You There'},
-  {name: 'How to Make Friends and Influence People'},
   {name: 'Elon Musk: Tesla, SpaceX, and the Quest for a Fantastic Future'},
-  {name: 'How Google Works'},
   {name: 'Zero to One'},
   {name: 'The Startup of You'},
   {name: 'The Design of Everyday Things'},
-  {name: 'The Intelligent Investor'},
   {name: 'Random Walk Down Wall Street'},
-  {name: 'I read too much non-fiction these days...'}
+  {name: 'Creativity Inc.'},
+  {name: 'The Hard Thing About Hard Things'},
+  {name: 'The Upstarts'},
+  {name: 'The Sense of an Ending'},
+  {name: 'https://www.goodreads.com/user/show/63338558-michael'}
 ];
 
 var places = [
-  {name: 'South Carolina'},
-  {name: 'Georgia'},
-  {name: 'New York'},
-  {name: 'Massachusetts'},
-  {name: 'Virginia'},
+  {name: 'Columbia & Myrtle, South Carolina'},
+  {name: 'Alpharetta and Atlanta, Georgia'},
+  {name: 'White Plains & Harrison, New York'},
+  {name: 'Boston and Cambridge, Massachusetts'},
+  {name: 'Charlottesville, Northern Virginia & DC'},
   {name: 'California!!!'},
-  {name: 'Lots of places in China'},
+  {name: 'Seattle'},
+  {name: 'Portland'},
+  {name: 'Xi`an, Shanghai, Hangzhou in China'},
 ];
 
 var quotes = [
+  {name: 'Know your audience.'},
   {name: 'Life is about your slope, not your y-intercept.'},
   {name: 'It is not how hard you hit, but how hard you get hit and keep moving forward.'},
   {name: 'If you give people the opportunity to do the right thing, you will rarely be disappointed'},
@@ -149,19 +168,25 @@ var quotes = [
   {name: 'My life amounts to no more than one drop in a limitless ocean. Yet what is any ocean, but a multitude of drops?'},
   {name: 'Change your thoughts and you change your world.'},
   {name: 'Our lives are not our own. We are bound to others, past and present, and by each crime and every kindness, we birth our future.'},
+  {name: 'A longing fulfilled is sweet to the soul :)'},
+  {name: 'How lucky I am to have something that makes saying goodbye so hard.'},
 ];
 
 var shows = [
   {name: 'Game of Thrones'},
   {name: 'Gotham'},
   {name: 'Westworld'},
+  {name: 'Ri *hic* Rick & Morty'},
+  {name: 'Black Mirror'},
+  {name: 'Dragon Ball Super'},
+  {name: 'Samurai Jack!!!!'},
   {name: 'Batman'},
   {name: 'Justice League'},
   {name: 'YouTube!!'},
 ];
 
 var brands = [
-  'an explorer.', 'one with sadness.', 'a software engineer.', 'teeming with joy.', 'a gamer.', 'optimistic.', 'a tennis player.', 'filled with DETERMINATION.', 'an adventurer.', 'unbound.', 'a Musketeer.', 'consistent.', 'a code monkey!!'
+  'an explorer.', 'grateful.', 'resilient.', 'one with sadness.', 'a software engineer.', 'teeming with joy.', 'a Square.', 'excited.', 'a believer.', 'a gamer.', 'optimistic.', 'a tennis player.', 'filled with DETERMINATION.', 'an adventurer.', 'unbound.', 'a Musketeer.', 'consistent.', 'a code monkey!!', 'a level 30+ Pokemon Go trainer.', 'team Valor!'
 ];
 
 /* =================================================
@@ -376,20 +401,22 @@ var HackathonPanel = React.createClass({
         <p>
           I am a hackathon enthusiast.
           You can find some of my past projects on <a href='http://devpost.com/leeroychenkins'>Devpost</a>.
-          I have participated in many. You should check one out sometime. Swag on swag on swag!!
+          Below are some that I have participated in. You should check one out sometime. Swag on swag on swag!!
         </p>
         <ul>
-          <li>Hack.UVA</li>
-          <li>Ramhacks</li>
+          <li>Hack.UVA (past winner and mentor)</li>
+          <li>Ramhacks (past winner)</li>
           <li>PennApps</li>
           <li>HackMIT</li>
           <li>JP Morgan Code for Good</li>
-          <li>HackDuke</li>
+          <li>HackDuke (past finalist)</li>
           <li>HackPrinceton</li>
-          <li>MHacks</li>
-          <li>BitCamp</li>
+          <li><a href="http://www.hackathon.io/to-be3">AngelHacks (past winner)</a></li>
+          <li>UVA Datafest</li>
           <li>HackVT</li>
           <li>Hack the North</li>
+          <li><a href="https://2017.spaceappschallenge.org/challenges/our-ecological-neighborhood/our-planet-our-home/teams/far-east-farmers/project">SpaceApps Global Nominee</a></li>
+          <li>TreeHacks</li>
         </ul>
         <button onClick={this.handleChange}>Back to Developer Window</button>
       </div>
