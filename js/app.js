@@ -150,19 +150,22 @@ var books = [
   {name: 'The Hard Thing About Hard Things'},
   {name: 'The Upstarts'},
   {name: 'The Sense of an Ending'},
+  {name: 'Homo Deus'},
+  {name: 'Tribe of Mentors'},
   {name: 'https://www.goodreads.com/user/show/63338558-michael'}
 ];
 
 var places = [
-  {name: 'Columbia & Myrtle, South Carolina'},
-  {name: 'Alpharetta and Atlanta, Georgia'},
-  {name: 'White Plains & Harrison, New York'},
-  {name: 'Boston and Cambridge, Massachusetts'},
-  {name: 'Charlottesville, Northern Virginia & DC'},
+  {name: 'South Carolina'},
+  {name: 'Georgia'},
+  {name: 'Tri-state area'},
+  {name: 'Massachusetts'},
+  {name: 'Virginia & DC'},
   {name: 'California!!!'},
-  {name: 'Seattle'},
-  {name: 'Portland'},
+  {name: 'Seattle & Portland'},
+  {name: 'Italy!'},
   {name: 'Xi`an, Shanghai, Hangzhou in China'},
+  {name: 'Soon: Australia, Hawaii, South America'},
 ];
 
 var quotes = [
