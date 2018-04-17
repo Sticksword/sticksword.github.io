@@ -6,6 +6,10 @@
 var ReactCSSTransitionGroup = React.addons.CSSTransitionGroup;
 
 var cs_courses = [
+  {name: 'Reinforcement Learning', number: 'OMS CS 7642'},
+  {name: 'Machine Learning', number: 'OMS CS 7641'},
+  {name: 'HCI', number: 'OMS CS 6750'},
+  {name: 'Big Data & Health Informatics', number: 'OMS CSE 6250'},
   {name: 'Database Systems', number: 'CS 4750'},
   {name: 'Cloud Computing', number: 'CS 4740'},
   {name: 'Mobile Application Development', number: 'CS 4720'},
@@ -42,48 +46,53 @@ var econ_math_courses = [
 ];
 
 var backend = [
-  {name: 'Ruby & Rails'},
-  {name: 'Python & Django, Django Rest Framework, Flask, pip, virtualenv, anaconda'},
+  {name: 'Ruby & Rails (my man main right now)'},
+  {name: 'Python & Django, Django Rest Framework, Flask, pip, virtualenv, anaconda (second in command)'},
   {name: 'Node & Express, NPM & Yarn'},
-  {name: 'Java & Spring, Hibernate, Maven'},
-  {name: 'Databases: MySQL, MongoDB, Oracle DB, Redis'},
-  {name: 'Tools: AWS, Heroku, Firebase, Bash'},
+  {name: 'Java & Spring, Hibernate, Maven or Pants'},
+  {name: 'Databases: MySQL and other relational DBs (I want to try out Cassandra and see what the hype is about), MongoDB, Redis'},
+  {name: 'Tools: AWS, Heroku, GCP & Firebase, Bash, Jenkins'},
 ];
 
 var frontend = [
   {name: 'TypeScript'},
-  {name: 'React & Flux & Webpack'},
-  {name: 'Modular CSS'},
-  {name: 'Ember'},
-  {name: 'Bower'},
-  {name: 'NPM'},
-  {name: 'Three.js'},
-  {name: 'D3'},
+  {name: 'React & Redux/Flux & Webpack'},
+  {name: 'Modular CSS l0l'},
+  {name: 'Ember (my main man right now)'},
+  {name: 'Yarn & NPM'},
+  {name: 'fiddled with Three.js and D3'},
+  {name: 'tried Bower, Grunt, and Gulp before they died off'},
 ];
 
 var mobile = [
   {name: 'Swift & iOS & XCode'},
   {name: 'Java & Android & Android Studio'},
   {name: 'React Native'},
-  {name: 'Angular & Ionic'}
+  {name: 'I have realized mobile is not for me though.'}
 ];
 
 var machine_learning = [
-  {name: 'Python & numpy, pandas, sklearn, tensorflow, matplotlib'},
+  {name: 'Python & numpy, pandas, sklearn, tensorflow, keras, matplotlib'},
   {name: 'Java and Weka/ABIGAIL'},
-  {name: 'R & ggplot'},
 ];
 
 var missions = [
-  {name: 'Kick ass @ Square [ ]'},
-  {name: 'Raise self standards for future shooting star wife [ ]'},
-  {name: 'Deploy mini Dropbox product [ ]'},
-  {name: 'Deploy J, your own nightly journaling assistant [ ]'},
+  {name: 'Get to L5 @ Square [ ]'},
+  {name: 'Get to L4 @ Square [ ]'},
+  {name: 'Become superhuman - for future shooting star wife and kids [ ]'},
+  {name: 'Pivot, deploy, and grow Buddy [ ]'},
+  {name: 'Finish Masters in CS (still outstanding, ETA 2020) [ ]'},
+  {name: 'Backflip [ ]'},
+  {name: 'Play a few piano songs [ ]'},
+  {name: 'Sing a song [ ]'},
+  {name: 'Win rate 50% in basketball [ ]'},
+  {name: 'Kick ass @ Square (half flopped, needed to focus)[✔]'},
   {name: 'Build gaming/dev rig [✔]'},
-  {name: 'Finish Masters in CS [ ]'},
   {name: 'Explore and Absorb Bae Area [✔]'},
   {name: 'Deploy MVP API [✔]'},
-  {name: 'Win a hackathon! [✔]'}
+  {name: 'Win a hackathon! [✔]'},
+  {name: 'Deploy mini Dropbox product (flopped) [✔]'},
+  {name: 'Deploy J, your own nightly journaling assistant (flopped) [✔]'},
 ];
 
 var games = [
@@ -116,7 +125,7 @@ var movies = [
   {name: 'The Matrix, Ghost in the Shell (anime)'},
   {name: 'Interstellar, Memento'},
   {name: 'The Shining, Clockwork Orange'},
-  {name: '3 Idiots, Blade Runner'},
+  {name: '3 Idiots, Blade Runner & 2049'},
   {name: 'ROCKY...'},
   {name: 'probably forgot a bunch...'},
 ];
@@ -136,10 +145,8 @@ var music = [
 var books = [
   {name: 'Elon Musk: Tesla, SpaceX, and the Quest for a Fantastic Future'},
   {name: 'Zero to One'},
-  {name: 'The Startup of You'},
   {name: 'The Design of Everyday Things'},
   {name: 'Random Walk Down Wall Street'},
-  {name: 'Creativity Inc.'},
   {name: 'The Hard Thing About Hard Things'},
   {name: 'The Upstarts'},
   {name: 'The Sense of an Ending'},
@@ -170,6 +177,7 @@ var quotes = [
   {name: 'Our lives are not our own. We are bound to others, past and present, and by each crime and every kindness, we birth our future.'},
   {name: 'A longing fulfilled is sweet to the soul :)'},
   {name: 'How lucky I am to have something that makes saying goodbye so hard.'},
+  {name: 'Fight.'},
 ];
 
 var shows = [
