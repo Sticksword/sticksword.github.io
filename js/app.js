@@ -78,14 +78,14 @@ var machine_learning = [
 
 var missions = [
   {name: 'Get to L5 @ Square [ ]'},
-  {name: 'Get to L4 @ Square [ ]'},
+  {name: 'Get to L4 @ Square [✔]'},
   {name: 'Become superhuman - for future shooting star wife and kids [ ]'},
-  {name: 'Pivot, deploy, and grow Buddy [ ]'},
+  {name: 'Pivot, deploy, and grow Buddy [✔]'},
   {name: 'Finish Masters in CS (still outstanding, ETA 2020) [ ]'},
-  {name: 'Backflip [ ]'},
+  {name: 'Backflip (flopped, only did via trampoline) [✔]'},
   {name: 'Play a few piano songs [ ]'},
   {name: 'Sing a song [ ]'},
-  {name: 'Win rate 50% in basketball [ ]'},
+  {name: 'Have a win rate of 50% in basketball [✔]'},
   {name: 'Kick ass @ Square (half flopped, needed to focus)[✔]'},
   {name: 'Build gaming/dev rig [✔]'},
   {name: 'Explore and Absorb Bae Area [✔]'},
@@ -181,6 +181,8 @@ var quotes = [
   {name: 'A longing fulfilled is sweet to the soul :)'},
   {name: 'How lucky I am to have something that makes saying goodbye so hard.'},
   {name: 'Fight.'},
+  {name: 'The world you live in tomorrow hinges on what you do today. Every stroke, every dribble, every line of code you write, written into history as the foundation for the future.'},
+  {name: 'I\'ll show you how great I am!!'} 
 ];
 
 var shows = [
