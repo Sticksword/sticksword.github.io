@@ -96,6 +96,8 @@ var missions = [
 ];
 
 var games = [
+  {name: 'SMASH'},
+  {name: 'Mario Kart!!'},
   {name: 'Breath of the Wild'},
   {name: 'Hearthstone'},
   {name: 'Undertale'},
@@ -125,7 +127,7 @@ var movies = [
   {name: 'The Matrix, Ghost in the Shell (anime)'},
   {name: 'Interstellar, Memento'},
   {name: 'The Shining, Clockwork Orange'},
-  {name: '3 Idiots, Blade Runner & 2049'},
+  {name: '3 Idiots, Blade Runner og & 2049'},
   {name: 'ROCKY...'},
   {name: 'probably forgot a bunch...'},
 ];
@@ -148,6 +150,7 @@ var books = [
   {name: 'The Hard Thing About Hard Things'},
   {name: 'The Upstarts'},
   {name: 'The Beginning of Infinity'},
+  {name: 'Man\'s Search for Meaning'},
   {name: 'Sapiens, Homo Deus, and soon his third book'},
   {name: 'Tribe of Mentors'},
   {name: "<a href=\"https://www.goodreads.com/user/show/63338558-michael\">Goodreads</a>"}
@@ -164,7 +167,7 @@ var places = [
   {name: 'Italy!'},
   {name: 'Hawaii'},
   {name: 'Xi`an, Shanghai, Hangzhou in China'},
-  {name: 'Soon: Australia, Japan, South America'},
+  {name: 'Soon: Australia, Japan, South America!?'},
 ];
 
 var quotes = [
@@ -425,7 +428,8 @@ var HackathonPanel = React.createClass({
           <li>JP Morgan Code for Good</li>
           <li>HackDuke (past finalist)</li>
           <li>HackPrinceton</li>
-          <li><a href="http://www.hackathon.io/to-be3">AngelHacks (past winner)</a></li>
+          <li><a href="http://www.hackathon.io/to-be3">Febreze AngelHacks (submission)</a></li>
+          <li><a href="https://vimeo.com/271041279">Febreze AngelHack (winning demo)</a></li>
           <li>UVA Datafest</li>
           <li>HackVT</li>
           <li>Hack the North</li>
