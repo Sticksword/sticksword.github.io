@@ -145,14 +145,12 @@ var music = [
 var books = [
   {name: 'Elon Musk: Tesla, SpaceX, and the Quest for a Fantastic Future'},
   {name: 'Zero to One'},
-  {name: 'The Design of Everyday Things'},
-  {name: 'Random Walk Down Wall Street'},
   {name: 'The Hard Thing About Hard Things'},
   {name: 'The Upstarts'},
-  {name: 'The Sense of an Ending'},
-  {name: 'Homo Deus'},
+  {name: 'The Beginning of Infinity'},
+  {name: 'Sapiens, Homo Deus, and soon his third book'},
   {name: 'Tribe of Mentors'},
-  {name: 'https://www.goodreads.com/user/show/63338558-michael'}
+  {name: "<a href=\"https://www.goodreads.com/user/show/63338558-michael\">Goodreads</a>"}
 ];
 
 var places = [
@@ -164,8 +162,9 @@ var places = [
   {name: 'California!!!'},
   {name: 'Seattle & Portland'},
   {name: 'Italy!'},
+  {name: 'Hawaii'},
   {name: 'Xi`an, Shanghai, Hangzhou in China'},
-  {name: 'Soon: Australia, Hawaii, South America'},
+  {name: 'Soon: Australia, Japan, South America'},
 ];
 
 var quotes = [
@@ -182,10 +181,12 @@ var quotes = [
   {name: 'How lucky I am to have something that makes saying goodbye so hard.'},
   {name: 'Fight.'},
   {name: 'The world you live in tomorrow hinges on what you do today. Every stroke, every dribble, every line of code you write, written into history as the foundation for the future.'},
-  {name: 'I\'ll show you how great I am!!'} 
+  {name: 'I\'ll show you how great I am!!'},
+  {name: 'Sometimes the people around you won\'t understand your journey. They don\'t need to, it\'s not for them.'}
 ];
 
 var shows = [
+  {name: 'TERRACE HOUSE (Boys & Girls in the City)'},
   {name: 'Game of Thrones'},
   {name: 'Gotham'},
   {name: 'Westworld'},
@@ -199,7 +200,7 @@ var shows = [
 ];
 
 var brands = [
-  'an explorer.', 'grateful.', 'resilient.', 'one with sadness.', 'a software engineer.', 'teeming with joy.', 'a Square.', 'excited.', 'a believer.', 'a gamer.', 'optimistic.', 'a tennis player.', 'filled with DETERMINATION.', 'an adventurer.', 'unbound.', 'a Musketeer.', 'consistent.', 'a code monkey!!', 'a level 30+ Pokemon Go trainer.', 'team Valor!'
+  'an explorer.', 'grateful.', 'resilient.', 'one with sadness.', 'a software engineer.', 'teeming with joy.', 'a Square.', 'excited.', 'a believer.', 'a gamer.', 'optimistic.', 'a tennis player.', 'filled with DETERMINATION.', 'an adventurer.', 'unbound.', 'a Musketeer.', 'consistent.', 'a code monkey!!', 'a level 32 Pokemon Go trainer.', 'happy', 'team Valor!'
 ];
 
 /* =================================================
